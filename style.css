@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@300&display=swap');
+*{
+   margin:0px;
+   padding:0px;
+   /* box-sizing: border-box; */
+}
+body{
+    font-size:1.125rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+img{
+    max-width: 100%;
+    display:block;
+}
+p{
+    text-align: justify;
+}
+:root{
+    --white-color:#f8f8f8;
+    --gray-color:#707070;
+    --light-blue-color:#1792d2;
+    --dark-blue-color:#143774;
+
+    /* font-family: 'Lora', serif;
+
+    font-family: 'Ubuntu', sans-serif; */
+}
+/* =======================
+   Element Selectors Section
+   ====================== */
+
+header{
+    background:var(--white-color);
+    padding:2rem;
+    /* width:auto; */
+}
+ul{
+    /* border:1px solid orange; */
+    /* li  border:1px solid red */
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+header a{
+    text-decoration: none;
+    display: block;
+}
+
+/* NAVIGATION */
+.container{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+    /* border:1px solid magenta; */
+}
+.container-flex,.article-flex{
+    display:flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.container-flex{
+    align-items:center;
+}
+.article-flex{
+    margin:2em auto;
+    display:flex;
+    gap:3em;
+    align-items: flex-start;
+    /* border:1px solid magenta; */
+}
+
+.site-title{
+    font-family:'Lora', serif; 
+    margin:0;
+    color: var(--dark-blue-color);
+    /* border:1px solid orangered; */
+}
+.subtitle{
+    margin-top: 0;
+    font-size:0.8rem;
+    font-weight:600;
+    font-family:'Lora',serif;
+    color:var(--light-blue-color);
+}
+.flex-container{
+    display:flex;
+    gap:2em;
+    font-family:'Ubuntu',sans-serif;
+    color:var(--gray-color);
+}
+header nav ul li a:hover{
+    color:var(--light-blue-color);
+}
+
+/* NAVIGATION ENDS HERE! */
+/* Article */
+/* article{
+    line-height: 1.9em;
+} */
+.article-medium{
+    margin:1em 0;
+}
+.article-info,.article-heading,[class*="body"],aside h3,aside h4{
+    margin:1em 0;
+}
+section a{
+    color:var(--light-blue-color);
+}
+
+.aside-featured,.aside-secondary{
+    padding:1em;
+    border:0.5em solid var(--white-color);
+    /* line-height: 1.5em; */
+    font-weight: 100;
+}
+
+footer{
+    background:var(--dark-blue-color);
+    padding:3em;
+}
+footer p{
+    text-align:center;
+    color:var(--white-color);
+    font-size: 1rem;
+    font-weight:700;
+    letter-spacing: 0.1em;
+    margin:0.5em;
+}
+
+
+@media (max-width:894px){
+    /* NAVIGATION */
+    .container-flex{
+        flex-direction: column;
+        align-items: space-between;
+        gap:2em;
+    }
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .subtitle,.site-title{
+        text-align: center;
+    }
+    /* NAVIGATION ENDS */
+}
