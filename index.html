@@ -87,9 +87,14 @@
 
     <footer>
         <p>Living the Simple life</p>
-        <p>Copyrights &copy 2021</p>
+        <p class="year"></p>
     </footer>
-   
+    <script defer>
+        let year = document.querySelector('.year')
+        let date = new Date()
+        let currentYear = date.getFullYear()
+        year.textContent = `Copyrights &copy ${currentYear}`
+    </script>
 </body>
 
 </html>
